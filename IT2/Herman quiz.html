@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Herman quiz</title>
+    <link rel="stylesheet" href="Herman quiz.css">
+
+
+</head>
+<body>
+<audio src="John%20Cena.mp3" id="cena"></audio>
+
+
+<h1>2. verdenskrig quiz</h1>
+
+<form id= "quiz" name="quiz">
+
+
+ <p> Hva var etternavnet til Tysklands propagandaminister under 2. verdenskrig? </p>
+ <input id="tekstbox" type="text" name="spørsmål1">
+
+
+<p>Hvilken dato markerer starten på 2. verdenskrig?</p>
+<input type="radio" id="mc" name="spørsmål2" value="1. September 1939">1.September 1939<br>
+<input type="radio" id="mc" name="spørsmål2" value="9. April 1940"> 9. April 1940<br>
+<input type="radio" id="mc" name="spørsmål2" value="6. Juni 1944"> 6. Juni 1944<br>
+
+<p>Hvilke av disse landene var ikke involvert i 2. verdenskrig?</p>
+<input type="radio" id="mc" name="spørsmål3" value="India"> India<br>
+<input type="radio" id="mc" name="spørsmål3" value="Sveits">Sveits<br>
+<input type="radio" id="mc" name="spørsmål3" value=" New Zealand">New Zealand<br>
+
+    <p>Hvilke av disse landene var ikke en del av aksemaktene?</p>
+
+    <input type="radio" id="mc" name="spørsmål4" value="Nord-Korea"> Nord-Korea<br>
+    <input type="radio" id="mc" name="spørsmål4" value="Tyskland">Tyskland<br>
+    <input type="radio" id="mc" name="spørsmål4" value="Italia">Italia<br>
+
+    <p>Omtrent hvor mange døde under 2. verdenskrig?</p>
+
+    <input type="radio" id="mc" name="spørsmål5" value="25-30 millioner"> 25-30 millioner<br>
+    <input type="radio" id="mc" name="spørsmål5" value="100 millioner">100 millioner<br>
+    <input type="radio" id="mc" name="spørsmål5" value="50-80 millioner">50-80 millioner<br>
+
+    <p>I hvilket år ble krigen offisielt avsluttet?</p>
+
+    <input type="radio" id="mc" name="spørsmål6" value="1949"> 1949<br>
+    <input type="radio" id="mc" name="spørsmål6" value="1945">1945<br>
+    <input type="radio" id="mc" name="spørsmål6" value="1946">1946<br>
+
+    <img src="" id="picture">
+
+    <input id="button" type="button" value="Test min historiekunnskap">
+
+</form>
+
+<div id="after_submit">
+    <p id="number_antallRiktig"></p>
+</div>
+
+<script src="./Herman quiz.js"></script>
+
+<script>
+
+    var number_antallRiktig = document.getElementById("number_antallRiktig");
+    var after_submit = document.getElementById("after_submit");
+    let button = document.getElementById("button");
+    let cena = document.getElementById("cena");
+    let mc = document.getElementById("mc");
+
+    after_submit.style.display = "none";
+
+
+    oninput = function() {
+        cena.play();
+    };
+
+    button.onclick = check;
+
+    function check(){
+
+        after_submit.style.display = "block";
+
+        var spørsmål1 = document.quiz.spørsmål1.value;
+        var spørsmål2 = document.quiz.spørsmål2.value;
+        var spørsmål3 = document.quiz.spørsmål3.value;
+        var spørsmål4 = document.quiz.spørsmål4.value;
+        var spørsmål5 = document.quiz.spørsmål5.value;
+        var spørsmål6 = document.quiz.spørsmål6.value;
+
+        var antallRiktig= 0;
+
+        if (spørsmål1 === "Goebbels" || spørsmål1=== "goebbels") {
+            antallRiktig++;
+        }
+        if (spørsmål2 === "1. September 1939") {
+            antallRiktig++;
+        }
+        if (spørsmål3 === "Sveits") {
+            antallRiktig++;
+        }
+        if (spørsmål4 === "Nord-Korea") {
+            antallRiktig++;
+        }
+        if (spørsmål5=== "50-80 millioner") {
+            antallRiktig++;
+        }
+        if (spørsmål6=== "1946"){
+            antallRiktig++;
+        }
+        var pictures = ["Skuffa.gif", "Brukbart.gif", "tommelopp.gif"];
+
+        var score;
+
+        if (antallRiktig > 4 && antallRiktig < 7) {
+            score = 2;
+        }
+
+        if (antallRiktig > 2 && antallRiktig < 5) {
+            score = 1;
+        }
+
+        if (antallRiktig >= 0 && antallRiktig < 3 ) {
+            score = 0;
+        }
+
+
+        document.getElementById("picture").src = pictures[score];
+
+        number_antallRiktig.innerHTML = "Du fikk "+ antallRiktig+ " poeng";
+    }
+
+
+
+
+</script>
+</body>
+</html>
