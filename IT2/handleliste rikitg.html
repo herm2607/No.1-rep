@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul id= "handleListe">
+
+
+
+</ul>
+
+<script>
+    let handleListe= document.getElementById("handleListe");
+    let  varer= ["ost", "paprika", "brød", "kaviar"]
+    console.log(varer[2]);
+    for(let vare of varer){
+        console.log(vare);
+        handleListe.innerHTML += "<li>" + vare + "</li>";
+    }
+   varer.unshift("Syltetøy");
+    varer.pop();
+    varer.splice(2,2,"knekkebrød");
+
+
+</script>
+
+</body>
+</html>

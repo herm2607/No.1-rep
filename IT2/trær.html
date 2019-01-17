@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul id="treListe">
+
+
+</ul>
+<script>
+    let treListe= document.getElementById("treListe");
+   let trær= ["lønn","hassel","bjørk","eik","blodlønn","furu","gran"];
+trær.splice(3,1);
+    trær.splice(2,1,"hengebjørk");
+    trær.splice(4,2);
+    trær.push("fjellbjørk","dvergbjørk");
+
+   trær.sort();
+
+   for(let tre of trær){
+       console.log(tre);
+       treListe.innerHTML += "<li>" + tre + "</li>";
+   }
+
+</script>
+
+</body>
+</html>

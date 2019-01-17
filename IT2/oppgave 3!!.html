@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgave 3</title>
+</head>
+<body>
+
+<ul id="bildeliste">
+
+</ul>
+
+<button id="neste">Neste</button>
+<button id="forige">Forige</button>
+
+
+<script>
+
+    let bildeliste = document.getElementById("bildeliste");
+
+    let bilder = ["bilde1","bilde2","bilde3"];
+
+
+
+
+
+
+    for(let bilde of bilder){
+        console.log(bilde);
+        bildeliste.innerHTML += "<li>" + bilde + "</li>";
+    }
+
+</script>
+
+</body>
+</html>

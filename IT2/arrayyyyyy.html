@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul id= "filmListe">
+
+
+
+</ul>
+
+<script>
+let filmListe= document.getElementById("filmListe");
+   let  filmer= ["Ben Hur", "Yung Slurp", "Janhenke"]
+    console.log(filmer[2]);
+   for(let film of filmer){
+       console.log(film);
+       filmListe.innerHTML += "<li>" + film + "</li>";
+   }
+
+
+</script>
+
+</body>
+</html>
