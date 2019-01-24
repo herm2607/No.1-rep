@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hjelpe app</title>
+</head>
+<body>
+<h1 id="overskrift">NEEDHELPPLZ</h1>
+<br>
+<input id="Navn" type="text" placeholder="Skriv ditt navn her">
+
+<input id="Problem" type="text" placeholder="Skriv problem her">
+<button id ="sendBtn">Send</button>
+<br>
+<div id="divProblemer"></div>
+
+
+<script>
+
+    const sendbtn = document.getElementById("sendBtn");
+    const inpNavn = document.getElementById("Navn");
+    const inpProblem = document.getElementById("Problem");
+    const divProblemer = document.getElementById("divProblemer");
+
+    let problemer = [];
+
+    sendbtn.onclick = function () {
+        problemer.push({
+            navn: inpNavn.value,
+            problem: inpProblem.value
+        });
+        console.log(problemer);
+
+        divProblemer.innerHTML = "";
+
+        for(let problem of problemer){
+            divProblemer.innerHTML += `<p>Navn: ${problem.navn}</p>
+                                          <p>Problem: ${problem.problem}</p>`
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>Hei</div>
+<div>på</div>
+<div>deg</div>
+
+<script>
+    var nodelista=document.getElementsByTagName("div");
+    var divArray=Array.from(nodelista);
+    for(var divElement of divArray){
+
+    divElement.style.background="DarkOrange";
+    divElement.style.marginRight= "5px";
+    divElement.style.float= "left";
+    divElement.style.textAlign="center";
+    divElement.style.width="200px";
+    divElement.style.height="120px";
+
+    }
+</script>
+</body>
+</html>
