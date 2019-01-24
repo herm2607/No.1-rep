@@ -1,0 +1,24 @@
+
+#app {
+    background-color: mediumaquamarine;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+}
+
+    #boks{
+        border: solid 1px black;
+        text-align: center;
+        padding: 2%;
+
+    }
+#divTeller{
+font-size: 66px;
+
+
+}
+#skjema{
+    float: right;
+}

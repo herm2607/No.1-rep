@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>opg 1</title>
+</head>
+<body>
+
+<p>Kaffe eller te?</p>
+<label><input type="radio" name="rgbRomme" id=rbKaffe>Kaffe</label>
+<label><input type="radio" name="rgbRomme" id=rbTe>Te</label>
+<p id="info"></p>
+
+<script>
+    var rbKaffe = document.getElementById("rbKaffe");
+    var rbTe = document.getElementById("rbTe");
+    var info = document.getElementById("info");
+    function sjekkBestilling() {
+        if(rbKaffe.checked){
+            info.innerHTML = "du har bestilt en kaffe";
+        }
+        else {
+            info.innerHTML = "du har bestilt te";
+        }
+    }
+    rbKaffe.onclick = sjekkBestilling;
+    rbTe.onclick = sjekkBestilling;
+
+
+</script>
+</body>
+</html>

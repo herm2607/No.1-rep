@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+     #minFirkant{background-color: bisque;
+         width: 200px;
+         height: 200px;
+
+
+     }
+    </style>
+</head>
+<body>
+
+<input type="text" id="inpBredde">
+
+<div id="minFirkant"></div>
+
+
+<sript>
+
+  var inpBredde= document.getElementById("inpBredde");
+    var minFirkant= document.getElementById("minFirkant");
+
+    inpBredde.onkeyup= function (){
+    minFirkant.style.width=inpBredde.value+ "px";
+
+    };
+
+
+
+</sript>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tegnign med js</title>
+
+
+    <style>
+     canvas{border: solid; /*lager en ramme rundt lerretet */
+
+
+     }
+
+
+
+    </style>
+</head>
+<body>
+
+<canvas id="canvas" width="600" height="600px">
+  Beklager nettleseren din støtter ikke canvar-elementer
+
+
+
+</canvas>
+
+<script>
+ const canvas= document.getElementById("canvas");
+    const ctx= canvas.getContext("2d");
+    //(x,y,bredde,høyde);
+
+ctx.fillStyle="orange"
+ctx.fillRect(20,300,40,80);
+ ctx.fillStyle="red";
+ ctx.fillRect(30,78,150,80);
+
+
+    ctx.fillRect(100,100,200,300);
+    ctx.fillRect(50,350,150,200);
+
+    ctx.moveTo(50,25);
+    ctx.lineTo(75,500);
+    ctx.moveTo(300,20);
+    ctx.lineTo(60,250);
+    ctx.lineTo(380,400);
+    ctx.stroke();
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

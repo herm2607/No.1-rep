@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+
+</head>
+<body>
+<script>
+
+ // Number
+ let mitTall= 80;
+ //String
+    let minTekst="tekst her";
+
+    //Boolean
+    let minBoolean= true; // Enten true eller false
+
+    alert(Math.floor(Math.random()*6)+1);
+    alert(Math.floor(Math.random()*11));
+    alert(Math.floor(Math.random()*11)+10);
+
+    var navn= ["Gunnhild","Per","Jens","Nina"];
+    document.write(navn[2]);
+    navn.push("Karsten");
+    document.write(navn[4]);
+
+    var bruker1= {
+        brukernavn: "yungmolester",
+        passord: "123abc"
+    };
+    var bruker2= {
+    brukernavn: "Gunnar",
+    passord: "yo"
+
+    };
+
+    var bruker3= {
+    brukernavn: "Slurp",
+    passord: "youngboyz"
+    };
+
+    bruker2.brukernavn="helvete";
+    document.write(bruker2.brukernavn);
+
+    var tall= Math.floor(Math.random()*10);
+    if(tall< 5){
+        document.write("Tallet er mindre enn 5");
+    }
+    else if(tall===5){
+        document.write("Tallet er 5");
+    }
+    else{
+        document.write("tallet er større enn 5");
+    }
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+     <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>oppgave3</title>
+     </head>
+     <body>
+
+     <h1>TogBillet</h1>
+
+
+     <input id="alderInp">
+     <button id="btn">Klik her</button>
+ <p id="prisShow">Skal stå her</p>
+
+ <script>
+
+ //A
+
+ /*
+ var tall = Math.floor(Math.random()*10);
+
+ if(tall < 5){
+     document.write("Tallet er mindre enn 5");
+ }
+ else if(tall === 5){
+     document.write("Tallet er 5");
+ }
+ else{
+     document.write("Tallet er større enn 5");
+ }
+ */
+
+ //B
+
+ let alderInp = document.getElementById("alderInp");
+ let btn = document.getElementById("btn");
+ let prisShow = document.getElementById("prisShow");
+
+ var pris = 0;
+
+
+ btn.onclick = function(){
+     if (alderInp.value < 6) {
+         pris = 0;
+     }
+     else if (alderInp.value > 5 && alderInp.value < 19) {
+         let student = prompt("Er du student?");
+         console.log(student);
+         if (student === "ja") {
+             pris = 30 - (30 / 5);
+         }
+         else {
+             pris =  30
+         }
+     }
+     else{
+         let pensjonist = prompt("Er du pensjonist?");
+         console.log(pensjonist);
+         if (pensjonist === "ja"){
+             pris = 70 - ((70 / 100) * 60);
+         }
+         else {
+             pris = 70;
+         }
+     }
+
+     prisShow.innerHTML= pris;
+
+ };
+
+
+ /*
+ for(let i = 0; i < 11; i++){
+     console.log("1 - 10:");
+     console.log(i);
+ }
+
+ for(let i = 0; i < 31; i++){
+     console.log("4 gangen:");
+     console.log(i * 4);
+ }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

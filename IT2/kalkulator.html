@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Enkel kalkulator</title>
+
+    <style>
+
+    img{
+        position: absolute;
+        left: 25px;
+        top: 60px;
+        max-width: 50%;
+
+
+
+
+    }
+
+
+
+    </style>
+</head>
+<body>
+<img src="../We Smart.jpg">
+
+<input id="inpTall" type="number"  placeholder="Skriv inn ditt freshe tall">
+<input id="nr2" type="number"  placeholder="Skriv inn ditt freshe tall">
+
+<span id="spnResultat"></span>
+<br>
+<button id="btnRegnUt">Regn ut</button>
+
+<script>
+
+var inpTall= document.getElementById("inpTall");
+var spnResultat= document.getElementById("spnResultat");
+var btnRegnUt= document.getElementById("btnRegnUt");
+var nr2= document.getElementById("nr2");
+
+
+
+// console.log(inpTall.value);
+
+btnRegnUt.onclick=function(){
+    spnResultat.innerHTML=Number(nr2.value)+ Number(inpTall.value);
+};
+
+</script>
+
+</body>
+</html>

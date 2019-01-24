@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="poeng"></div>
+
+<div id="overskrift">
+    <h1>Quizzers</h1>
+</div>
+
+<div id="spørsmål">
+    <h1></h1>
+</div>
+
+<div class="grades">
+    <div id="svar1">
+        <h1></h1>
+    </div>
+    <div id="svar2">
+        <h1></h1>
+    </div>
+    <div id="svar3">
+        <h1></h1>
+    </div>
+    <div id="svar4">
+        <h1></h1>
+    </div>
+</div>
+
+<audio src="correct.wav" id="correct"></audio>
+<audio src="wrong.wav" id="wrong"></audio>
+
+
+
+
+<script>
+    const spørsmål = document.getElementById("spørsmål");
+    const grades = document.getElementById("grades");
+    const svar1 = document.getElementById("svar1");
+    const svar2 = document.getElementById("svar2");
+    const svar3 = document.getElementById("svar3");
+    const svar4 = document.getElementById("svar4");
+    const correct = document.getElementById("correct");
+    const wrong = document.getElementById("wrong");
+    const poeng = document.getElementById("poeng");
+    let spørsmål1 = ["Hva er 5x2?", "16", "12", "8", "10"];
+    let spørsmål2 = ["Hva er Hovedstaten i Norge?", "Kristiania", "Moss", "Oslo", "Fredrikstad"];
+    let spørsmål3 = ["Hvor mange andekrefter er det i en hestekreft?", "175", "200", "150", "50"];
+    let spørsmål4 = ["Hvor mange innbyggere er det i Sverige?", "7 mill", "12 mill", "10 mill", "8 mill"];
+    let spørsmål5 = ["Når døde Cæsar?", "44 f.Kr", "24 e.Kr", "30 f.Kr", "50 e.Kr"];
+    let spørsmål6 = ["Når startet 1VK?", "1890", "1920", "1914", "1918"];
+    var i = 1;
+    var y = 1;
+
+    spørsmål.innerHTML = spørsmål1[0];
+    svar1.innerHTML = spørsmål1[1];
+    svar2.innerHTML = spørsmål1[2];
+    svar3.innerHTML = spørsmål1[3];
+    svar4.innerHTML = spørsmål1[4];
+    poeng.innerHTML = i;
+
+
+    let i = 0;
+
+    i = i + 1;
+
+    function svar(event){
+        console.log("svar");
+        console.log(event);
+        if(i === 1){
+            if (event.target === svar1){
+                wrong.play();
+            }
+            else if (event.target === svar2){
+                wrong.play();
+            }
+            else if (event.target === svar3){
+                wrong.play();
+            }
+            else if (event.target === svar4){
+                i = i + 1;
+                correct.play();
+                console.log("riktig");
+            }
+        }
+    }
+    svar1.onclick = svar;
+    svar2.onclick = svar;
+    svar3.onclick = svar;
+    svar4.onclick = svar;
+
+
+    /*
+            function feil(){
+                wrong.play();
+                i = i - 1;
+            }
+            function riktig(){
+                correct.play();
+                i = i + 1;
+                y = y + 1;
+                return y;
+            }
+            if(y === 1){
+                svar1.onclick = feil;
+                svar2.onclick = feil;
+                svar3.onclick = feil;
+                svar4.onclick = riktig;
+                console.log(y);
+            }
+            else if(y === 2){
+            }
+*/
+    /*
+    if(svar1.onclick){
+        wrong.play();
+        i = i - 1;
+    }
+    else if(svar2.onclick) {
+        wrong.play();
+        i = i - 1;
+    }
+    else if(svar3.onclick) {
+        wrong.play();
+        i = i - 1;
+    }
+    else if(svar4.onclick) {
+        correct.play();
+        i = i + 1;
+    };
+*/
+    /*
+    svar4.onclick = function(){
+        correct.play();
+        i = i + 1;
+        spørsmål.innerHTML = spørsmål2[0];
+        svar1.innerHTML = spørsmål2[1];
+        svar2.innerHTML = spørsmål2[2];
+        svar3.innerHTML = spørsmål2[3];
+        svar4.innerHTML = spørsmål2[4];
+        poeng.innerHTML = i;
+        svar1.onclick = function () {
+            wrong.play();
+        };
+        svar2.onclick = function () {
+            wrong.play();
+        };
+        svar3.onclick = function () {
+            correct.play();
+            i = i + 1;
+            spørsmål.innerHTML = spørsmål3[0];
+            svar1.innerHTML = spørsmål3[1];
+            svar2.innerHTML = spørsmål3[2];
+            svar3.innerHTML = spørsmål3[3];
+            svar4.innerHTML = spørsmål3[4];
+            poeng.innerHTML = i;
+            svar1.onclick = function () {
+                correct.play();
+                i = i + 1;
+                poeng.innerHTML = i;
+            };
+            svar2.onclick = function () {
+                wrong.play();
+                i = i - 1;
+            };
+            svar3.onclick = function () {
+                wrong.play();
+                i = i - 1;
+            };
+            svar4.onclick = function () {
+                wrong.play();
+                i = i - 1;
+            };
+        };
+        svar4.onclick = function () {
+            wrong.play();
+        };
+    };
+*/
+    /*
+            console.log(i);
+            switch(grades){
+                case svar1.onclick:
+                    wrong.play();
+                    break;
+                case svar2.onclick:
+                    wrong.play();
+                    break;
+                case svar3.onclick:
+                    wrong.play();
+                    break;
+                case svar4.onclick:
+                    correct.play();
+                    break;
+            }
+            */
+</script>
+
+
+
+</body>
+</html>

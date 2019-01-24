@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body{
+            cursor: none;
+        }
+
+        #firkant{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin-left: 40px;
+            margin-top: 40px;
+            border-radius: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <img src="bardhoksrud.jpeg" id="firkant">
+
+
+    <script>
+
+        var firkant = document.getElementById("firkant"); // oppretter en variabel som refererer til div-elementet
+
+        window.onmouseover = function(event){
+            spaceInvaders.style.baclgroundImage = `url("nyttbilde.jpg"`;
+
+
+            firkant.style.marginLeft = x + "px"; // firkant sin marginLeft skal være lik verdien av x pluss stringen "px"
+            firkant.style.marginTop = y + "px";
+
+            if(event.code === "ArrowLeft"){
+                firkant.style.margin
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

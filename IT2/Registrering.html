@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nyttårstur</title>
+    <link rel="stylesheet" href="stilark.css">
+</head>
+<body>
+
+<main>
+ <div id= "app">
+     <h2> Nyttårsaften 2018/2019</h2>
+     <div id= "boks">
+         <h4> Antall påmeldte:</h4>
+         <div id="divTeller">0</div>
+     </div>
+     <div id="skjema">
+         <h5> Registrer deg her  </h5>
+         <input type="checkbox"  id="medFolge">
+         <label for="medFolge"> Med Folge </label>
+         <button id="btnRegistrer"> Registrer</button>
+
+     </div>
+
+
+ </div>
+
+
+
+</main>
+
+<script>
+
+  const divTeller= document.getElementById("divTeller") ;
+  const medFolge= document.getElementById("medFolge") ;
+  const btnRegistrer= document.getElementById("btnRegistrer") ;
+
+  let antall = 0;
+
+  btnRegistrer.onclick= function(){
+      antall +=1 ;
+divTeller.innerHTML= antall;
+      if(medFolge.checked) {
+
+          antall += 1;
+      }
+          divTeller.innerHTML= antall;
+      }
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
