@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+
+    <ul id="filmListe">
+
+    </ul>
+
+    <script>
+
+        let filmListe = document.getElementById("filmListe");
+
+        let filmer = ["ben Hur","Shawshank Redemption","Anglorius Basterds"];
+
+
+        function sortereBokstaver(a,b){
+            a = a.toUpperCase();
+            b = b.toUpperCase();
+
+            if(a == b){
+                return 0
+            }
+            else if(a > b) {
+                return 1;
+            }
+            else{
+                return -1;
+            }
+        }
+
+        function sortereTall(a,b){
+            return a-b;
+        }
+
+
+        let temperaturer = [2,5,7,1,2,17,8];
+
+        let totTemp = 0;
+
+        for (temp of temperaturer){
+            totTemp += temp;
+        }
+        let gjennomsnitt = totTemp/temperaturer.length;
+        document.write("Gjennomsnittet er: " + gjennomsnitt);
+
+
+        filmer.sort(sortereBokstaver);
+
+
+        for(let film of filmer){
+            console.log(film);
+            filmListe.innerHTML += "<li>" + film + "</li>";
+        }
+
+
+        // Metoder til array s. 201
+
+        filmer.push("Django Unchained"); // legger til en ting sist i arrayen
+        filmer.unshift("Oslo 11 august"); // legger til en film først i arrayen
+        filmer.pop(); // tar bort det siste elementet i arrayen
+        filmer.shift();// tar bort det første elementet i arrayen
+        filmer.splice(1,2); // fjerner elementet med indeks 1, og fjerner to element
+        filmer.splice(1,1,"The shape of water"); // Bytter ut Shawshank redemption med The shape of water
+
+
+        //filmer[1]="King Kong";
+
+
+        /*
+        for (let i = 0; i < filmer.length; i++){
+            console.log(filmer[i]);
+        }
+        */
+    </script>
+</body>
+</html>

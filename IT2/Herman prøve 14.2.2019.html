@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Valutakalkulator</title>
+
+</head>
+<body>
+
+
+
+
+<input id="inpTall" type="number"  placeholder="Skriv inn NOK">
+
+<span id="spnResultat1"></span>
+<br>
+<button id="btnRegnUtSEK">Konverter til SEK</button>
+
+<span id="spnResultat2"></span>
+<br>
+<button id="btnRegnUtGBP">Konverter til GBP</button>
+
+<span id="spnResultat3"></span>
+<br>
+<button id="btnRegnUtUSD">Konverter til USD</button>
+
+<script>
+
+    var inpTall= document.getElementById("inpTall");
+    var spnResultat= document.getElementById("spnResultat1");
+    var btnRegnUt= document.getElementById("btnRegnUt");
+
+    var inpTall= document.getElementById("inpTall");
+    var spnResultat= document.getElementById("spnResultat2");
+    var btnRegnUt= document.getElementById("btnRegnUt");
+
+
+
+
+
+    // console.log(inpTall.value);
+
+    btnRegnUtSEK.onclick=function(){
+        spnResultat.innerHTML= inpTall.value  * 1.07 ;
+    };
+
+    btnRegnUtGBP.onclick=function(){
+        spnResultat.innerHTML= inpTall.value  * 0.089 ;
+    };
+
+    btnRegnUtUSD.onclick=function(){
+        spnResultat.innerHTML= inpTall.value  * 0.11 ;
+    };
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BildeTilTekst</title>
+    <style>
+        div{
+            margin-left: 35%;
+        }
+        a{
+            color: fuchsia;
+        }
+        .container{
+            position: relative;
+            width:400px;
+            height: 280px;
+            background-color: lightblue;
+            border: 14px solid white;
+            box-shadow: 0 0 1px darkgray;
+            overflow:hidden;
+        }
+        .container>img{
+            position:absolute;
+            transform: scale(1);
+            transition: 0.5s 0.5s;
+        }
+        .container>article{
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            padding: 10%;
+            background-color: crimson;
+            color:white;
+            text-align:center;
+            transform: scale(0);
+            transition: 0.5s 0s;
+        }
+        .container:hover>img{
+            transform:scale(0);
+            transition: 0.5s 0s;
+        }
+        .container:hover>article{
+            transform: scale(1);
+            transition: 0.5s 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="himmel.jpeg">
+    <article class="infoTekst">
+        <h1>FinneSnutz</h1>
+        <hr>
+        <p>Petter er en trivelig kar, som ikke bråker i timen. Stort smil!</p>
+        <a href="https://www.facebook.com/petter.finnema/timeline?lst=100006357250922%3A100001754816139%3A1548923146">
+            Stalk Petter!</a>
+    </article>
+</div>
+
+</body>
+</html>

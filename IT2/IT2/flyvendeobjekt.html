@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>flyvende objekt</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #himmel{
+            width: 1280px;
+        }
+        #fly{
+            position: absolute;
+            right: -450px;
+            bottom: -250px;
+            animation-name: flyAnimasjon;
+            animation-duration: 5s;
+        }
+
+        @keyframes flyAnimasjon {
+            0%{
+                right: -350px;
+                bottom: -150px;
+            }
+            40%{
+                right: 800px;
+                bottom: 500px;
+            }
+            50%{
+                rotation: 180deg;
+            }
+            100%{
+                right: -350px;
+                bottom: -150px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<img src="himmel.jpeg" id="himmel">
+<img src="fly.png" id="fly">
+
+
+<script>
+    let himmel = document.querySelector("#himmel");
+    himmel.onclick = function(){
+        flyAnimasjon
+    }
+</script>
+
+
+
+</body>
+</html>

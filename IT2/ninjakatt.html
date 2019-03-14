@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ninjakatt</title>
+    <style>
+      #container{
+        width:213.33px;
+          height: 213px;
+          overflow:hidden;
+          position:relative;
+
+      }
+        img{
+            position:absolute;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="container">
+
+ <img id="ninjakatt" src="ninjakatt.png">
+</div>
+
+<script>
+ const ninjakatt= document.querySelector("#ninjakatt");
+
+ let ninjaCSS= [
+     {
+         left: "0px"
+     } ,
+     {
+         left: "-600%"
+     }
+
+ ];
+
+ let ninjaEgenskaper={
+     duration:800,
+     iterations:Infinity,
+     easing: "steps(6)"
+ };
+
+ninjakatt.animate(ninjaCSS,ninjaEgenskaper);
+</script>
+
+</body>
+</html>

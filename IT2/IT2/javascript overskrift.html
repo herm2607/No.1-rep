@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>java overskrift</title>
+
+    <style>
+        #tekst{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1 id="tekst">Tekst</h1>
+
+
+<script>
+    let tekst = document.querySelector("#tekst");
+    tekst.style.width = "300px";
+    tekst.style.margin = "auto";
+    tekst.style.transition = "3s";
+    tekst.onmouseover = function(){
+        tekst.style.transform = "scale(3)";
+    }
+    tekst.onmouseleave = function(){
+        tekst.style.transform = "scale(1)";
+    }
+</script>
+
+
+</body>
+</html>

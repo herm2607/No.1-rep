@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>planke</title>
+    <style>
+        #planke{
+            width: 500px;
+            height: 75px;
+            background-color: saddlebrown;
+            position: absolute;
+            left: 30%;
+            top: 40%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="planke"></div>
+
+<input type="number" id="inputFelt">
+
+
+<script>
+    let inputFelt = document.querySelector("#inputFelt");
+    let planke = document.querySelector("#planke");
+    planke.style.transition = "1s";
+    inputFelt.oninput = function(){
+        planke.style.transform = "rotate(" + inputFelt.value + "deg)";
+        console.log(inputFelt.value);
+    }
+</script>
+
+
+
+
+
+
+</body>
+</html>

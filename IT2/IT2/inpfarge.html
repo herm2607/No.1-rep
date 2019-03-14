@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>inpFarge</title>
+
+    <style>
+        body{
+            transition: 1s;
+        }
+        #firkant{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+
+
+<input type="text" id="inpFarge" placeholder="Skriv en farge"> // kan også ha type="color"
+<div id="firkant">
+
+</div>
+
+
+<script>
+    let inpFarge = document.querySelector("#inpFarge");
+    let firkant = document.querySelector("#firkant");
+    inpFarge.oninput = function() {
+        firkant.style.backgroundColor = inpFarge.value;
+    }
+</script>
+
+</body>
+</html>

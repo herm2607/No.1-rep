@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>firkantRulling</title>
+
+    <style>
+        #firkant{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+        }
+    </style>
+
+</head>
+<body>
+
+<button>Start</button>
+<button>Stop</button>
+<button>Revers</button>
+
+<input type="range" id="slider" min="0.1" max="2" value="1" step="0.1">
+
+<div id="firkant"></div>
+
+<script>
+    let firkant = document.querySelector("#firkant");
+    let button = document.querySelectorAll("button");
+    const slider = document.querySelector("#slider");
+    let animasjonStil = [
+        {
+            left: "0px",
+            top: "40px",
+            opacity: "1",
+            transform: "rotate(0deg)"
+        },
+        {
+            left: "300px",
+            top: "500px",
+            opacity: "0",
+            transform: "rotate(360deg)"
+        },
+        {
+            left: "960px",
+            top: "580px",
+            opacity: "1",
+            transform: "rotate(1440deg)"
+        }
+    ];
+    let animasjonEgenskaper = {
+        duration: 1000,
+        easing : "ease-in-out",
+        direction: "alternate",
+        iterations: Infinity,
+        fill: "forwards"
+    };
+    let aniFirkant = firkant.animate(animasjonStil, animasjonEgenskaper);
+    aniFirkant.pause();
+    button[0].onclick = function(){
+        aniFirkant.play();
+    };
+    button[1].onclick = function(){
+        aniFirkant.pause();
+    };
+    button[2].onclick = function(){
+        aniFirkant.reverse();
+    };
+    slider.onchange = function(){
+        aniFirkant.playbackRate = slider.value;
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>oppgave 1</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+        @keyframes vhRulling {
+            0% {
+                left: 0px;
+                top: 20px;
+            }
+            50% {
+                left: 600px;
+                top: 20px;
+                transform: rotate(360deg);
+            }
+            100% {
+                left: 0px;
+                top: 20px;
+            }
+        }
+        #firkant{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #5881d3;
+            animation: vhRulling 4s;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="firkant"></div>
+
+<h1 id="overskrift">Overskrift</h1>
+
+
+<script>
+    let overskrift = document.querySelectorAll("#overskrift");
+    overskrift.animate([{opacity:0},{opacity:1}],2000); // usynelig til synelig på 2 sec.
+</script>
+
+
+</body>
+</html>

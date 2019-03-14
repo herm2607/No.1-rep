@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oppgave3 Elon Musk bby</title>
+
+    <style>
+        body{
+            background-image: url("earth.png");
+            background-size: 100% auto;
+        }
+
+
+
+        #rocket{
+            position: absolute;
+
+        }
+
+
+        #bakgrunn{
+            width: 1250px;
+            height: 700px;
+            position: absolute;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<button id="knapp1">Push button to launch rocket</button>
+
+<button id="knapp2">Push button to return to earth</button>
+
+
+<img src="moon.png" id="bakgrunn">
+
+<img id="rocket" src="spaceX.png">
+
+
+
+
+<script>
+
+
+
+
+    let rocket = document.querySelector("#rocket");
+
+    let knapp1 = document.querySelector("#knapp1");
+
+    let bakgrunn = document.querySelector("#bakgrunn");
+
+    let knapp2 = document.querySelector("#knapp2");
+
+
+    let h = 3;
+    knapp2.style.display = "none";
+    bakgrunn.style.display = "none";
+
+
+
+    let animasjonStil = [
+        {
+            left: "650px",
+            bottom: "100px",
+            transform:"rotate(0deg)"
+        },
+        {
+            left:"650px",
+            bottom:"300px",
+            transform:"rotate(0deg)"
+        },
+        {
+            left: "600px",
+            bottom: "2000px",
+            transform: "rotate(-20deg)"
+        },
+        {
+            left: "200px",
+            bottom: "200px",
+            transform: "rotate(10deg)"
+        }
+
+
+    ];
+
+    let animasjonsEgenskaper = {
+        duration: 5000,
+        easing: "ease-in-out",
+        direction: "alternate",
+        fill: "forwards"
+    };
+
+
+    let animasjonStil2 = [
+        {
+            left: "200px",
+            bottom: "200px",
+            transform: "rotate(10deg)"
+        },
+        {
+            left: "600px",
+            bottom: "2000px",
+            transform: "rotate(-20deg)"
+        },
+        {
+            left:"650px",
+            bottom:"300px",
+            transform:"rotate(0deg)"
+        },
+        {
+            left: "650px",
+            bottom: "100px",
+            transform:"rotate(0deg)"
+        }
+
+
+    ];
+
+
+    let aniRocket1 = rocket.animate(animasjonsStil,animasjonsEgenskaper);
+    let aniRocket2 = rocket.animate(animasjonsStil2,animasjonsEgenskaper);
+
+
+    aniRocket2.pause();
+    aniRocket1.pause();
+
+</script>
+
+</body>
+</html>

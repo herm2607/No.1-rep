@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SPill med canvas</title>
+</head>
+<body>
+
+<canvas id="spillCanvas" width="400" height="200"></canvas>
+
+
+<script>
+
+    const spillCanvas = document.querySelector("#spillCanvas");
+    const ctx = spillCanvas.getContext("2d");
+
+    /*
+    ctx.fillStyle = "red";
+    ctx.fillRect(10,10,20,40);
+    */
+
+    //Globale variabler
+    let firkant = {
+        bredde: 20,
+        hoyde: 30,
+        farge: "blue",
+        xpos: 10,
+        ypos: 20,
+        xfart: 10,
+        yfart: 4,
+        xretning: 1,
+        yretning: 1
+    };
+
+    let firkant2 = {
+        bredde: 20,
+        hoyde: 30,
+        farge: "blue",
+        xpos: 200,
+        ypos: 20,
+        xfart: 10,
+        yfart: 4,
+        xretning: 1,
+        yretning: 1
+    };
+
+    //Setup
+    gameLoop();
+
+
+    // Funksjonsdefinisjoner
+
+    function gameLoop(){
+        clearCanvas();
+        sjekkKollisjon(firkant);
+        tegnFirkant(firkant);
+        flyttFirkant(firkant);
+        requestAnimationFrame(gameLoop); //Kaller seg selv 60 ganger i sekundet
+    }
+
+    function tegnFirkant(figur){
+        ctx.fillStyle = figur.farge;
+        ctx.fillRect(figur.xpos,figur.ypos, figur.bredde, figur.hoyde);
+    }
+
+    function flyttFirkant(figur){
+        figur.xpos = figur.xpos + (figur.xretning*figur.xfart);
+    }
+
+    function clearCanvas(){
+        ctx.fillStyle = "white";
+        ctx.fillRect(0,0, spillCanvas.width, spillCanvas.height);
+    }
+
+    /* function fjernFirkant(figur){
+         ctx.clearRect
+     }
+     */
+
+    function sjekkKollisjon(figur){
+        if(figur.xpos >= spillCanvas.width) {
+            figur.xretning = figur.xretning * -1;
+        }
+        }
+
+
+
+</script>
+</body>
+</html>

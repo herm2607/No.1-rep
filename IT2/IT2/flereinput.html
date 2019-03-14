@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>flereInput</title>
+    <style>
+        #element{
+            width: 200px;
+            height: 200px;
+            background-color: #5881d3;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+
+<input type="number" id="breddeInp" placeholder="bredde">
+<input type="number" id="høydeInp" placeholder="høyde">
+<input type="color" id="fargeInp" placeholder="farge">
+<input type="range" id="avrundingInp" placeholder="avrunding">
+<input type="number" id="xInput" placeholder="xPosition" >
+<input type="number" id="yInput" placeholder="yPosition">
+
+<br>
+<br>
+<br>
+
+<div id="element"></div>
+
+
+<script>
+    let inputFelt = document.querySelectorAll("input");
+    let element = document.querySelector("#element");
+    element.style.transition = "1s";
+    inputFelt[0].oninput = function(){
+        element.style.width = inputFelt[0].value + "px";
+    };
+    inputFelt[1].oninput = function(){
+        element.style.height = inputFelt[1].value + "px";
+    };
+    inputFelt[2].oninput = function(){
+        element.style.backgroundColor = inputFelt[2].value;
+    };
+    inputFelt[3].oninput = function(){
+        element.style.borderRadius = inputFelt[3].value + "%";
+    };
+    inputFelt[4].oninput = function(){
+        element.style.left = inputFelt[4].value + "px";
+    };
+    inputFelt[5].oninput = function(){
+        element.style.top = inputFelt[5].value + "px";
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>flytt on click</title>
+
+    <style>
+        #sirkel{
+            height: 75px;
+            width: 75px;
+            background-color: mediumpurple;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div id="sirkel"></div>
+
+<script>
+    let sirkel = document.querySelector("#sirkel");
+    sirkel.style.transition = "0.5s";
+    document.onclick = function(e) {
+        var xPosition = e.pageX;
+        var yPosition = e.pageY;
+        console.log (xPosition+ "px");
+        console.log(yPosition + "px");
+        sirkel.style.left = (xPosition - 75/2) + "px";
+        sirkel.style.top = (yPosition - 75/2) + "px";
+    }
+</script>
+
+
+</body>
+</html>

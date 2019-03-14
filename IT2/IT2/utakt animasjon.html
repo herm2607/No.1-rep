@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>utakt</title>
+
+    <style>
+        div{
+            width: 20px;
+            height: 10px;
+            background-color: goldenrod;
+            float: left;
+            margin-right: 10px;
+        }
+        body{
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+
+<script>
+    const divs = document.querySelectorAll("div");
+    let divCss = [
+        {
+            transform: "translateY(0)",
+            opacity: "1",
+            backgroundColor: "goldenrod"
+        },
+        {
+            transform: "translateY(600px)",
+            opacity: "0",
+            backgroundColor: "palegoldenrod"
+        }
+    ];
+    let divEgenskaper = {
+        duration: 1000,
+        iterations: Infinity,
+        direction: "alternate",
+        easing: "ease-in-out"
+    };
+    /*
+    for(div of divs){
+        div.animate(divCss, divEgenskaper);
+    }
+    */
+    let divAnimasjoner = [];
+    for(let i = 0; i < divs.length; i++){
+        divEgenskaper.delay = i*100;
+        divAnimasjoner[i] = divs[i].animate(divCss, divEgenskaper)
+    }
+</script>
+
+</body>
+</html>
