@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="391da854-cf63-41d0-a7c5-63a6b921f715" name="Default Changelist" comment="arbeit">
-      <change afterPath="$PROJECT_DIR$/IT2/ninjakatt.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IT2/Spillprosjekt/flapppy/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IT2/Spillprosjekt/flapppy/bird.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IT2/Spillprosjekt/flapppy/fg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IT2/Spillprosjekt/flapppy/flappyBird.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IT2/Spillprosjekt/flapppy/fly.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IT2/Spillprosjekt/flapppy/funny-face-png-200x200.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IT2/Spillprosjekt/flapppy/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IT2/Spillprosjekt/flapppy/pipeNorth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IT2/Spillprosjekt/flapppy/pipeSouth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IT2/Spillprosjekt/flapppy/sad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IT2/Spillprosjekt/flapppy/score.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/Herman heldags oppgave 3.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT2/Herman heldags oppgave 3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2/Spillprosjekt/Spill.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,19 +41,20 @@
           <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="27" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="2" />
-          <entry key="html" value="136" />
+          <entry key="html" value="138" />
           <entry key="java" value="2" />
           <entry key="jpg" value="6" />
-          <entry key="js" value="2" />
+          <entry key="js" value="3" />
           <entry key="md" value="1" />
           <entry key="png" value="1" />
         </counts>
@@ -51,25 +62,25 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="HTML" value="136" />
+          <entry key="HTML" value="138" />
           <entry key="Image" value="7" />
-          <entry key="JavaScript" value="2" />
+          <entry key="JavaScript" value="3" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="400" />
-          <entry key="html" value="15340" />
-          <entry key="js" value="98" />
+          <entry key="html" value="15430" />
+          <entry key="js" value="355" />
           <entry key="txt" value="111" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="400" />
-          <entry key="HTML" value="15340" />
-          <entry key="JavaScript" value="98" />
+          <entry key="HTML" value="15430" />
+          <entry key="JavaScript" value="355" />
           <entry key="PLAIN_TEXT" value="111" />
         </counts>
       </usages-collector>
@@ -80,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT2/Herman heldags oppgave 3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
+            <state relative-caret-position="785">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
@@ -98,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT2/Herman prøve 14.2.19 oppgave 2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1716">
+            <state relative-caret-position="785">
               <caret line="52" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
@@ -107,16 +118,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT2/Herman prøve 14.2.19 oppgave 3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4488">
-              <caret line="136" column="7" selection-start-line="136" selection-start-column="7" selection-end-line="136" selection-end-column="7" />
+            <state>
+              <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IT2/cookieclicker.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1023">
+            <state relative-caret-position="785">
               <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
             </state>
           </provider>
@@ -125,17 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT2/canvas spill.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2508">
+            <state relative-caret-position="785">
               <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IT2/Spillprosjekt/Spill.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -185,8 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/IT2/IT prosjekt.html" />
-        <option value="$PROJECT_DIR$/IT2/Herman quiz.css" />
         <option value="$PROJECT_DIR$/IT2/Herman quiz.js" />
         <option value="$PROJECT_DIR$/IT2/Herman quiz.html" />
         <option value="$PROJECT_DIR$/IT2/Herman heldags jul.html" />
@@ -236,6 +236,8 @@
         <option value="$PROJECT_DIR$/IT2/cookieclicker.html" />
         <option value="$PROJECT_DIR$/IT2/canvas spill.html" />
         <option value="$PROJECT_DIR$/IT2/Spillprosjekt/Spill.html" />
+        <option value="$PROJECT_DIR$/IT2/Spillprosjekt/index.html" />
+        <option value="$PROJECT_DIR$/IT2/Spillprosjekt/flappyBird.js" />
       </list>
     </option>
   </component>
@@ -256,7 +258,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,18 +274,20 @@
               <item name="herm2607.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="herm2607.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="IT2" type="462c0819:PsiDirectoryNode" />
-              <item name="IT2" type="462c0819:PsiDirectoryNode" />
+              <item name="Spillprosjekt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="herm2607.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="herm2607.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="IT2" type="462c0819:PsiDirectoryNode" />
-              <item name="uke6_animasjonerJS" type="462c0819:PsiDirectoryNode" />
+              <item name="Spillprosjekt" type="462c0819:PsiDirectoryNode" />
+              <item name="flapppy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,7 +358,8 @@
       <workItem from="1550131153831" duration="2107000" />
       <workItem from="1550140312760" duration="8285000" />
       <workItem from="1551342252032" duration="3062000" />
-      <workItem from="1552556736124" duration="658000" />
+      <workItem from="1552556736124" duration="1317000" />
+      <workItem from="1553159495866" duration="8201000" />
     </task>
     <task id="LOCAL-00001" summary="min første commit">
       <created>1535010613091</created>
@@ -417,7 +421,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142838000" />
+    <option name="totallyTimeSpent" value="151698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -475,21 +479,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="arbeit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/IT2/IT2/Torsdag/uke47/bilde.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-799" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/oppgave 2 kjørr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/granbo02.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/øve til prøve.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4933">
@@ -747,9 +736,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/firkant.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Spillprosjekt/Spill.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Herman heldags oppgave 3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
+        <state relative-caret-position="785">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
@@ -763,22 +766,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Herman prøve 14.2.19 oppgave 2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1716">
+        <state relative-caret-position="785">
           <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Herman prøve 14.2.19 oppgave 3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4488">
-          <caret line="136" column="7" selection-start-line="136" selection-start-column="7" selection-end-line="136" selection-end-column="7" />
+        <state>
+          <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/cookieclicker.html">
+    <entry file="file://$PROJECT_DIR$/IT2/Spillprosjekt/flappyBird.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1023">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="495">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Spillprosjekt/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/canvas spill.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="785">
+          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -789,24 +806,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/firkant.html">
+    <entry file="file://$PROJECT_DIR$/IT2/Spillprosjekt/flapppy/Spill.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
+        <state relative-caret-position="-3552" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/canvas spill.html">
+    <entry file="file://$PROJECT_DIR$/IT2/cookieclicker.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2508">
-          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/Spillprosjekt/Spill.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="785">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
         </state>
       </provider>
     </entry>
