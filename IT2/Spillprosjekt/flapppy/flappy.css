@@ -1,0 +1,18 @@
+#overskrift{
+    font-family: "AR HERMANN";
+    font-size: 100px;
+    margin-left: 725px;
+    position: absolute;
+    margin-top: 10px;
+}
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 725px;
+    margin-right: auto;
+    margin-top: 140px;
+    position: absolute;
+    display: block;
+    width: 450px;
+    height: 750px;
+}
